@@ -1,11 +1,3 @@
-//
-//  UISeatsView.swift
-//  winstrike
-//
-//  Created by PRS on 27/02/2018.
-//  Copyright © 2018 PR_Solution. All rights reserved.
-//
-
 import UIKit
 import Macaw
 typealias MImage = Macaw.Image
@@ -46,11 +38,11 @@ class UISeatsView: MacawView {
             
             if !self.pickedSeats.contains(seat.id) {
                 self.pickedSeats.insert(seat.id)
-                seatView.sView.srcVar.value = SeatType.picked.getSrc()
+                seatView.sView.src = SeatType.picked.getSrc()
                 self.delegate?.seatPicked(id: seat.id, unselect: false, publicPid: seat.publicPid)
             } else {
                 self.pickedSeats.remove(seat.id)
-                seatView.sView.srcVar.value = seat.type.getSrc()
+                seatView.sView.src = seat.type.getSrc()
                 self.delegate?.seatPicked(id: seat.id, unselect: true, publicPid: seat.publicPid)
             }
         }
@@ -65,7 +57,7 @@ class UISeatsView: MacawView {
     }
     
     private func createMImage(seat: Seat, type: SeatType? = nil) -> MacawSeatView {
-        let seatview = MacawSeatView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        let seatview = MacawSeatView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         let seat = seatview.create(seat: seat, type: type)
         return seat
     }

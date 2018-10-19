@@ -66,10 +66,7 @@
 		581708942179CA6E00835D07 /* demoissumacaw */ = {
 			isa = PBXGroup;
 			children = (
-				581708AE2179D3CA00835D07 /* UISeatsView.swift */,
-				581708B02179D5CA00835D07 /* SeatType.swift */,
-				581708B22179D6DA00835D07 /* Seat.swift */,
-				581708AC2179CFE000835D07 /* LayoutMagic.swift */,
+				581708B42179E24400835D07 /* Source */,
 				581708952179CA6E00835D07 /* AppDelegate.swift */,
 				581708972179CA6E00835D07 /* ViewController.swift */,
 				581708992179CA6E00835D07 /* Main.storyboard */,
@@ -86,6 +83,33 @@
 				581708A82179CD1C00835D07 /* Macaw.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581708B42179E24400835D07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				581708B62179E27600835D07 /* Common */,
+				581708B52179E25C00835D07 /* MacawFiles */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		581708B52179E25C00835D07 /* MacawFiles */ = {
+			isa = PBXGroup;
+			children = (
+				581708AE2179D3CA00835D07 /* UISeatsView.swift */,
+				581708B02179D5CA00835D07 /* SeatType.swift */,
+				581708B22179D6DA00835D07 /* Seat.swift */,
+			);
+			path = MacawFiles;
+			sourceTree = "<group>";
+		};
+		581708B62179E27600835D07 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				581708AC2179CFE000835D07 /* LayoutMagic.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -41,7 +41,7 @@ enum SeatType: String {
         case .booked:
             return "seatRed.png"
         case .picked:
-            return "seatWhite.png"
+            return "seatWhite"
         case .bookedYou:
             return "seatBlue.png"
         case .vip:

@@ -17,21 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You for your time! Please tap on the picture. After tap it must change the source.png" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="his-41-Zey">
-                                <rect key="frame" x="16" y="20" width="343" height="143"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You migth be interesting UISeatsView.swift lines 41 and 45" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S6-eb-s5C">
+                                <rect key="frame" x="16" y="20" width="343" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="143" id="Gpw-YH-jWQ"/>
+                                    <constraint firstAttribute="height" constant="51" id="bAm-Eh-DaG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.10141412738164612" blue="0.36143660461728944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="his-41-Zey">
+                                <rect key="frame" x="16" y="64" width="343" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="Gpw-YH-jWQ"/>
+                                </constraints>
+                                <string key="text">Thank You for your time! Please tap on the picture. After tap it must change the source.png. Our macaw view lay in the scrollview. I recreate same enviroment which worked for us before.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.31840187310000001" green="0.17753553389999999" blue="0.65663629769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.31840187310000001" green="0.17753553389999999" blue="0.65663629769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4S6-eb-s5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="108-pG-pOD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="his-41-Zey" secondAttribute="trailing" constant="16" id="AS5-OE-zYw"/>
+                            <constraint firstItem="4S6-eb-s5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kk8-jD-67o"/>
                             <constraint firstItem="his-41-Zey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VB9-Yw-hff"/>
-                            <constraint firstItem="his-41-Zey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uEW-zQ-Cvj"/>
+                            <constraint firstItem="his-41-Zey" firstAttribute="top" secondItem="4S6-eb-s5C" secondAttribute="bottom" constant="-7" id="ZbW-c4-PET"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4S6-eb-s5C" secondAttribute="trailing" constant="16" id="exQ-JF-g8q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
