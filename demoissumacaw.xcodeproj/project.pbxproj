@@ -12,6 +12,11 @@
 		5817089B2179CA6E00835D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581708992179CA6E00835D07 /* Main.storyboard */; };
 		5817089D2179CA6F00835D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5817089C2179CA6F00835D07 /* Assets.xcassets */; };
 		581708A02179CA6F00835D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5817089E2179CA6F00835D07 /* LaunchScreen.storyboard */; };
+		581708A92179CD1C00835D07 /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581708A82179CD1C00835D07 /* Macaw.framework */; };
+		581708AD2179CFE000835D07 /* LayoutMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581708AC2179CFE000835D07 /* LayoutMagic.swift */; };
+		581708AF2179D3CA00835D07 /* UISeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581708AE2179D3CA00835D07 /* UISeatsView.swift */; };
+		581708B12179D5CA00835D07 /* SeatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581708B02179D5CA00835D07 /* SeatType.swift */; };
+		581708B32179D6DA00835D07 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581708B22179D6DA00835D07 /* Seat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		5817089C2179CA6F00835D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5817089F2179CA6F00835D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		581708A12179CA6F00835D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581708A82179CD1C00835D07 /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
+		581708AC2179CFE000835D07 /* LayoutMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutMagic.swift; sourceTree = "<group>"; };
+		581708AE2179D3CA00835D07 /* UISeatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISeatsView.swift; sourceTree = "<group>"; };
+		581708B02179D5CA00835D07 /* SeatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatType.swift; sourceTree = "<group>"; };
+		581708B22179D6DA00835D07 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581708A92179CD1C00835D07 /* Macaw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				581708942179CA6E00835D07 /* demoissumacaw */,
 				581708932179CA6E00835D07 /* Products */,
+				581708A72179CD0200835D07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +66,10 @@
 		581708942179CA6E00835D07 /* demoissumacaw */ = {
 			isa = PBXGroup;
 			children = (
+				581708AE2179D3CA00835D07 /* UISeatsView.swift */,
+				581708B02179D5CA00835D07 /* SeatType.swift */,
+				581708B22179D6DA00835D07 /* Seat.swift */,
+				581708AC2179CFE000835D07 /* LayoutMagic.swift */,
 				581708952179CA6E00835D07 /* AppDelegate.swift */,
 				581708972179CA6E00835D07 /* ViewController.swift */,
 				581708992179CA6E00835D07 /* Main.storyboard */,
@@ -62,6 +78,14 @@
 				581708A12179CA6F00835D07 /* Info.plist */,
 			);
 			path = demoissumacaw;
+			sourceTree = "<group>";
+		};
+		581708A72179CD0200835D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				581708A82179CD1C00835D07 /* Macaw.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +98,7 @@
 				5817088E2179CA6E00835D07 /* Sources */,
 				5817088F2179CA6E00835D07 /* Frameworks */,
 				581708902179CA6E00835D07 /* Resources */,
+				581708AA2179CDAA00835D07 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -130,13 +155,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		581708AA2179CDAA00835D07 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5817088E2179CA6E00835D07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				581708982179CA6E00835D07 /* ViewController.swift in Sources */,
+				581708AF2179D3CA00835D07 /* UISeatsView.swift in Sources */,
+				581708B32179D6DA00835D07 /* Seat.swift in Sources */,
+				581708B12179D5CA00835D07 /* SeatType.swift in Sources */,
 				581708962179CA6E00835D07 /* AppDelegate.swift in Sources */,
+				581708AD2179CFE000835D07 /* LayoutMagic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +335,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R82X32X6B7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = demoissumacaw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = apptimizm.com.demoissumacaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +357,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R82X32X6B7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = demoissumacaw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = apptimizm.com.demoissumacaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
