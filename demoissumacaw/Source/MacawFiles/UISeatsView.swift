@@ -1,3 +1,12 @@
+//
+//  UISeatsView.swift
+//  demoissumacaw
+//
+//  Created by Eugen K on 19/10/2018.
+//  Copyright © 2018 Eugen K. All rights reserved.
+//
+
+
 import UIKit
 import Macaw
 typealias MImage = Macaw.Image
